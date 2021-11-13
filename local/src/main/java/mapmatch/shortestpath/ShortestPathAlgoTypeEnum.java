@@ -15,6 +15,8 @@ public enum ShortestPathAlgoTypeEnum implements Serializable {
 
     BI_DIJKSTRA(AlgorithmTypeConstant.BI_DIJKSTRA),
 
+    BI_ASTAR(AlgorithmTypeConstant.BI_ASTAR),
+
     CH(AlgorithmTypeConstant.CH);
 
     String type;
@@ -43,6 +45,8 @@ public enum ShortestPathAlgoTypeEnum implements Serializable {
         static final String CH = "CH";
 
         static final String BI_DIJKSTRA = "BI_DIJKSTRA";
+
+        static final String BI_ASTAR = "BI_ASTAR";
     }
 }
 
