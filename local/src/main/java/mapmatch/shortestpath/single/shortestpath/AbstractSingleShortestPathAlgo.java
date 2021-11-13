@@ -25,6 +25,8 @@ public abstract class AbstractSingleShortestPathAlgo<V, E> extends AbstractShort
                 return new OneToOneDijkstra(roadNetwork.getRoadGraph(true));
             case BI_DIJKSTRA:
                 return new OneToOneBiDijkstra(roadNetwork.getRoadGraph(true));
+            case BI_ASTAR:
+                return new OneToOneBiAstar(roadNetwork.getRoadGraph(true));
             case CH:
                 Objects.requireNonNull(roadNetwork.getCHGraph(), "contraction graph should not be null!");
                 return new OneToOneCH(roadNetwork.getCHGraph());
